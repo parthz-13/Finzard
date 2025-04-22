@@ -525,7 +525,7 @@ header,
 }
 .button-calculate,
 button[type="submit"] {
-  background: linear-gradient(90deg, #3E92CC 0%, #4062BB 100%);
+  background: rgb(127, 0, 255);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -543,8 +543,7 @@ button[type="submit"] {
 
 .button-calculate:hover,
 button[type="submit"]:hover {
-  background: linear-gradient(90deg, #4062BB 0%, #3E92CC 100%);
-  transform: translateY(-2px) scale(1.03);
+
   box-shadow: 0 4px 16px rgba(62, 146, 204, 0.15);
 }
 
