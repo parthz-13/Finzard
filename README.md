@@ -1,12 +1,22 @@
-# React + Vite
+# **💰 Finzard - Financial Calculators**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application offering a suite of intuitive financial calculators to help users make smarter money decisions. From calculating loan repayments to planning for long-term financial goals, this app covers it all.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔹 **Loan/EMI Calculator**  
+--> Calculate monthly payments, total interest, and view a detailed amortization schedule. Visualize the breakdown of principal vs. interest over the loan period.
 
-## Expanding the ESLint configuration
+🔹 **Simple Interest Calculator**  
+--> Quickly compute interest earned or payable on a principal amount with a given rate and time duration.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔹 **Compound Interest Calculator**  
+--> See how your investments grow over time with various compounding frequencies (daily, monthly, quarterly, yearly). Includes interactive growth visualizations.
+
+🔹 **Stock/Investment Calculator**   
+--> View compound growth projections for recurring investments.
+
+🔹 **Financial Goal Planner**  
+--> Plan your future goals by calculating how much you need to save each month to achieve them.
+
+---
