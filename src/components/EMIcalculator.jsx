@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// Helper for INR formatting
+
 const formatINR = (value) =>
   new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(value);
 
@@ -21,15 +21,15 @@ function EMICalculator() {
     setTotalInterest(null);
 
     const P = parseFloat(principal);
-    const r = parseFloat(rate) / 1200; // Monthly interest rate
-    const n = parseFloat(years) * 12;  // Total number of payments
+    const r = parseFloat(rate) / 1200; 
+    const n = parseFloat(years) * 12;  
 
     if (isNaN(P) || isNaN(r) || isNaN(n) || P <= 0 || r < 0 || n <= 0) {
       setError("Please enter valid positive numbers for all fields.");
       return;
     }
 
-    // EMI Formula: [P x r x (1+r)^n] / [(1+r)^n-1]
+
     const emiValue = P * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
     const totalPay = emiValue * n;
     const totalInt = totalPay - P;
