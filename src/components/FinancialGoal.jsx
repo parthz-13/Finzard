@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// Helper for INR formatting
+
 const formatINR = (value) =>
   new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(value);
 
@@ -30,13 +30,11 @@ function FinancialGoal() {
       return;
     }
 
-    // Monthly compounding
+
     const n = t * 12;
     const r = annualRate / 100 / 12;
 
-    // Future Value formula with current savings growing: FV = PV*(1+r)^n + PMT*[(1+r)^n - 1]/r
-    // Solve for PMT (required monthly savings):
-    // PMT = (FV - PV*(1+r)^n) * r / [ (1+r)^n - 1 ]
+
     const pvGrowth = PV * Math.pow(1 + r, n);
     const numerator = FV - pvGrowth;
     const denominator = (Math.pow(1 + r, n) - 1) / r;
